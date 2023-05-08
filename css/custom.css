@@ -12025,6 +12025,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  outline: 1px solid red;
+}
+
 .main {
   height: 100vh;
   position: relative;
@@ -12114,5 +12118,10 @@ textarea.form-control-lg {
   100% {
     transform: scale(1);
     opacity: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .main {
+    height: 1200px;
   }
 }/*# sourceMappingURL=custom.css.map */

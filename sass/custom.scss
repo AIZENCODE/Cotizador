@@ -17,7 +17,7 @@ $font-family-base: 'Space Mono', monospace;
 
 
 * {
-    //  outline: 1px solid red;
+      outline: 1px solid red;
 }
 
 .main {
@@ -144,3 +144,13 @@ $font-family-base: 'Space Mono', monospace;
 }
 
 // fin spinner
+
+@media (min-width: 1200px) { 
+
+
+    .main{
+        height: 1200px;
+
+    }
+
+}
