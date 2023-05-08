@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800&family=Space+Mono:wght@400;700&display=swap');
+
+
+
+
+$primary : #0077C0;
+$info : #c6c6c6;
+
+
+$font-family-base: 'Space Mono', monospace;
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+:root {}
+
+
+* {
+    //  outline: 1px solid red;
+}
+
+.main {
+    height: 100vh;
+    position: relative;
+}
+
+.card {
+    background: transparent;
+}
+
+.card__alert {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+}
+
+.card__alert--danger {
+
+    background-color: rgba(208, 2, 26, 0.366);
+
+    color: #fff;
+}
+
+.card__alert--success {
+
+    background-color: rgba(2, 208, 81, 0.366);
+
+    color: #fff;
+}
+
+.main__container {
+    display: grid;
+    place-items: center;
+    // grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.main__img {
+
+    display: block;
+    object-position: center;
+    object-fit: contain;
+    height: 70%;
+
+    filter: drop-shadow(16px 16px 20px rgba(255, 255, 255, 0.37)) grayscale(100%);
+
+
+
+}
+
+.card__form {
+
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(23, 44, 184, 0.125);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    max-width: 850px;
+    color: #fff;
+    padding: 1em;
+}
+
+.card__boleto{
+    background: radial-gradient(circle, rgba(0,0,0,0.365983893557423) 25%, rgba(0,0,0,0.6685049019607843) 99%),url(/img/img3.jpg);
+    padding: 1.5em;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// spinner 
+
+.spinner {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 100px auto;
+    background-color: #ffffff;
+
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+
+@-webkit-keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0)
+    }
+
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+// fin spinner

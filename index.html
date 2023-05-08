@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/custom.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+
+  <main class=" main finisher-header">
+    <div class="main__container container">
+      <!-- <img src="img/img2.png" class="main__img" alt=""> -->
+      <form class="card card__form" id="cotizarseguro">
+        <div class="card-body card__content">
+
+
+          <!-- <div class="alert w-100 card__alert card__alert--success" role="alert">
+            Faltan datos!,revisar formulario y pruebe de nuevo
+          </div> -->
+          <h2 class="card__title fw-bold"> Cotiza viaje lunar</h2>
+
+
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nave</label>
+            <select id="marca" class="form-select" aria-label="Default select example">
+              <option value="" selected disabled> - Seleccionar - </option>
+              <option value="1">Apolo 18</option>
+              <option value="2">Apolo 19</option>
+              <option value="3">Apolo 20</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Año</label>
+            <select id="year" class="form-select" aria-label="Default select example">
+
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Tipo</label>
+            <div class="form-check">
+              <input class="form-check-input" value="Basico" type="radio" name="tipo" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Basico
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" value="Completo" type="radio" name="tipo" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Vip
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100 mb-3">Cotizar boleto</button>
+
+         
+          <div class="spinner" id="cargando"></div>
+          <div class="card__result" id="resultado">
+
+            <!-- <div class="card__boleto position-relative">
+              <h4 class="header fw-bolder"> Boleto Cotizado </h4>
+              <div class="d-flex gap-2 fs-6 fw-bold ">
+                <p class="font-bold"> Asiatico</p>
+                <p class="font-bold"> 1999</p>
+              </div>
+              
+              <span class="fw-bolder position-absolute top-0 end-0 m-2 badge rounded-pill text-bg-primary"> Basico</span>
+              <p class="font-bold text-end text-info"> $1253.00</p>
+            </div> -->
+            
+
+          </div>
+
+        </div>
+      </form>
+
+
+    </div>
+  </main>
+
+
+
+  <script src="js/finisher-header.es5.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    new FinisherHeader({
+      "count": 100,
+      "size": {
+        "min": 6,
+        "max": 17,
+        "pulse": 0
+      },
+      "speed": {
+        "x": {
+          "min": 0,
+          "max": 0.4
+        },
+        "y": {
+          "min": 0,
+          "max": 0.6
+        }
+      },
+      "colors": {
+        "background": "#000",
+        "particles": [
+          "#0077c0",
+          "#c6c6c6",
+          "#f2f2f2"
+        ]
+      },
+      "blending": "overlay",
+      "opacity": {
+        "center": 1,
+        "edge": 0
+      },
+      "skew": 0,
+      "shapes": [
+        "c"
+      ]
+    });
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
