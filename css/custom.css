@@ -12088,6 +12088,16 @@ textarea.form-control-lg {
   background-size: cover;
 }
 
+.card__img {
+  display: block;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 150px;
+  filter: drop-shadow(16px 16px 20px rgba(255, 255, 255, 0.37)) grayscale(100%);
+}
+
 .spinner {
   display: none;
   width: 40px;
