@@ -117,7 +117,7 @@ UI.prototype.mostrarResultado = (total,seguro ) =>{
   div.classList.add('card__boleto','position-relative');
 
   div.innerHTML = `
-
+  <img src="img/img2.png" class="card__img" alt="">
   <h4 class="header fw-bolder"> Boleto Cotizado </h4>
   <div class="d-flex gap-2 fs-6 fw-bold ">
     <p class="font-bold"> ${textoMarca} /</p>
