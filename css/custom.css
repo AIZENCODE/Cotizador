@@ -12025,6 +12025,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  font-size: 15px;
+}
+
 .main {
   height: 100vh;
   position: relative;
@@ -12116,8 +12120,18 @@ textarea.form-control-lg {
     opacity: 0;
   }
 }
+@media (max-width: 1399.98px) {
+  body {
+    font-size: 14px;
+  }
+}
 @media (max-width: 1200px) {
   .main {
     height: 1200px;
+  }
+}
+@media (max-width: 575.98px) {
+  body {
+    font-size: 12.5px;
   }
 }/*# sourceMappingURL=custom.css.map */
